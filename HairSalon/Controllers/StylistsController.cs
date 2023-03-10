@@ -54,7 +54,7 @@ namespace HairSalon.Controllers
       Stylist thisStylist = _db.Stylists
                                   .Include(stylist => stylist.Clients)
                                   .FirstOrDefault(stylist => stylist.StylistId == id);
-      return View(thisStylist);
+      return View(thisStylist); //g
     }
 
     public ActionResult Delete(int id)
