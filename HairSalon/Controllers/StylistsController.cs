@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using System.Stylists.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using HairSalon.Models;
 
@@ -54,7 +54,7 @@ namespace HairSalon.Controllers
       Stylist thisStylist = _db.Stylists
                                   .Include(stylist => stylist.Clients)
                                   .FirstOrDefault(stylist => stylist.StylistId == id);
-      return View(thisStylist); //g
+      return View(thisStylist);
     }
 
     public ActionResult Delete(int id)

@@ -31,7 +31,7 @@ namespace HairSalon.Controllers
     }
 
     [HttpPost]
-    public ActionResult Create(Stylist stylist)
+    public ActionResult Create(Client client)
     {
       if(client.StylistId == 0)
       {
