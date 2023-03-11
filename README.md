@@ -52,7 +52,7 @@ A website for managing stylists and clients for salon owners.
 
 ## Known Bugs
 
-No known bugs. 
+Blank and un-deletable stylists can be made. 
 
 ## License
 Enjoy the site! If you have questions or suggestions for fixing the code, please contact me!
